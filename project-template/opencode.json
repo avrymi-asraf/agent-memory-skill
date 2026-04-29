@@ -1,0 +1,56 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "opencode-websearch-cited@1.2.0"
+  ],
+  "provider": {
+    "google": {
+      "options": {
+        "websearch_cited": {
+          "model": "gemini-2.5-flash"
+        }
+      }
+    }
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      },
+      "enabled": true
+    },
+    "gemini_deep_research": {
+      "type": "local",
+      "command": [
+        "uv",
+        "run",
+        ".opencode/mcp/gemini-deep-research/mcp-server.py"
+      ],
+      "environment": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+        "GEMINI_DEEP_RESEARCH_FILE_SEARCH_STORES": ""
+      },
+      "enabled": true
+    },
+    "pdf_to_markdown": {
+      "type": "local",
+      "command": [
+        "uv",
+        "run",
+        ".opencode/mcp/pdf-to-markdown/mcp-server.py"
+      ],
+      "environment": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+        "PDF_TO_MD_PROVIDER": "google",
+        "PDF_TO_MD_MODEL": "gemini-2.5-flash",
+        "PDF_TO_MD_RENDER_DPI": "180",
+        "PDF_TO_MD_INCLUDE_PAGE_MARKERS": "true",
+        "PDF_TO_MD_COMPLETENESS_CHECK": "false",
+        "PDF_TO_MD_TIMEOUT_SECONDS": "120"
+      },
+      "enabled": true
+    }
+  }
+}
