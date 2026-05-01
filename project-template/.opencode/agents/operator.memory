@@ -1,10 +1,7 @@
 # Operator Memory
 
-## Short-Term Memory
+## log Memory - max 20 raws
+<every raw, sammery of some last imporortent converstion.>
 
-- Initial state: command and verification workflows are not documented yet.
-
-## Long-Term Memory
-
-- Prefer project-defined scripts and package manager commands.
-- Record durable command pitfalls here or in the relevant project skill.
+## structed Memory - max 100 raws
+<structed document about importent things>
