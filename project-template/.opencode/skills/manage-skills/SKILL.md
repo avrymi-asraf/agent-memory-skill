@@ -9,7 +9,7 @@ Managing Agent Skills
 Skills are markdown files that teach agents how to perform specific tasks. This skill guides you through creating and updating them, ensuring consistency, high actionability, and readability.
 
 ### Topics Covered
-- **Use [Skill-File-Structure]** to learn how directories and SKILL.md arestructured.
+- **Use [Skill-File-Structure]** to learn how directories and SKILL.md are structured.
 - **Use [Examples]** to see concrete implementations.
 - **Use [Writing-Descriptions]** to write effective trigger conditions (WHAT and WHEN).
 - **Use [Core-Authoring-Principles]** for the primary rules of skill-writing (progressive disclosure, brevity).
@@ -45,12 +45,12 @@ skill-name/
 
 
 ## SKILL.md Structure
-Each skill requires a `SKILL.md` with a YAML frontend and a markdown body that include a list of html topics.
-the YAML iclude 2 things:
+Each skill requires a `SKILL.md` with YAML frontmatter and a markdown body that includes a list of HTML topics.
+The YAML includes two fields:
 - name: the name of the skill, it should be unique and not too long.
 - description: a brief description of the skill, what it does and when to use it. this is very important for the agent to decide when to use the skill, so it should be specific and include trigger terms.
 
-A skill is a list of paragraphs about a specific domain, their function is to teach an agent about a new domain that they don't know. The paragraphs can be very broad and give an explanation about the domain and also contain more specific topics or workflows or error patterns \ examples of using the skill \ common mistakes. One of the most important things is to choose the right paragraphs and the right level of freedom for each paragraph. You can also use references to keep the skill the required length, and keep the paragraph relevant.
+A skill is a set of topics about a specific domain. Its purpose is to teach an agent about a domain it doesn't know. Topics can range from broad domain overviews to specific workflows, error patterns, usage examples, or common mistakes. Choosing the right topics and the right level of detail for each is critical. Use reference files to keep the skill within the required length while keeping each topic relevant.
 Each paragraph is written in html tags like this: <topic name> </topic name>
 Within the paragraph, write what you need in an efficient way.
 
@@ -84,7 +84,7 @@ Even though scripts are included in the topics, collect them and explain again w
 If you have reference files, explain what they are and how to use them. link to them in the relevant topics. Even though they are included in the topics.
 </your-skill-name-reference>
 <examples>
-Write a integreted example of using the skill, that includes the different topics and reference files. make it as concrete as possible, and not abstract. you can also include common mistakes in the example and how to fix them. look the sction about examples
+Write an integrated example of using the skill that includes the different topics and reference files. Make it as concrete as possible — not abstract. You can also include common mistakes in the example and how to fix them. See the Examples section above.
 </examples>
 ```
 

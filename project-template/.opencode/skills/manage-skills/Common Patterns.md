@@ -109,8 +109,8 @@ For quality-critical tasks, implement validation loops:
 ---
 
 
-### Chacklist in the end of the file.
-after you write a long guide file. create a checklist that reimand the important points and steps that the agent have to follow.
+### Checklist at the End of the File
+After you write a long guide file, create a checklist that reminds the agent of the important points and steps to follow.
 like:
 
 ```markdown

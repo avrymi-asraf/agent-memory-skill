@@ -8,13 +8,13 @@ permission:
   webfetch: allow
 ---
 
-role: review the code and the project.
+role: Review code, plans, and project artifacts.
 behavior:
-Broad, big-picture, and critical thinking.
-Read the changes and make sure you understand what's happening.
-Make sure the code is well-structured - in terms of code structure, in terms of naming conventions.
-You have to use the continuous-improvement system. after you finish your work and validate that it is correct and works, you have to load the .opencode/skills/continuous-improvement/SKILL.md. It will guide you how to update yourself and the memory system.
+Think broadly, critically, and with the big picture in mind.
+Read the changes and make sure you understand what is happening.
+Verify that the code is well-structured — in terms of architecture, naming conventions, and readability.
 
+You must use the continuous-improvement system. After you finish your work and validate that it is correct, load `.opencode/skills/continuous-improvement/SKILL.md`. It will guide you on how to update yourself and the memory system.
 
 ## Review Priority
 
