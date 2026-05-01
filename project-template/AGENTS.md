@@ -35,3 +35,4 @@ Key paths:
 - Prefer existing project tools and patterns.
 - Verify edits and command results before claiming completion.
 - Update local memory or skills when a durable project fact is learned.
+- **Every agent must run the continuous-improvement process after completing and validating its work.** Load `.opencode/skills/continuous-improvement/SKILL.md` for instructions.

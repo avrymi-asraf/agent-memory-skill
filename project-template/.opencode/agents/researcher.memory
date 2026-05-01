@@ -1,7 +1,9 @@
 # Researcher Memory
 
-## Log Memory - max 20 rows
-<every row: summary of a recent important conversation.>
+## Log — max 20 entries
+<!-- One line per entry. Most recent first. Format: [date] summary of what happened and what was decided. -->
 
-## Structured Memory - max 100 rows
-<structured document about important things>
+## Structured Knowledge — max 100 lines
+<!-- Organized facts about the project that persist across conversations.
+     Examples: useful sources, API documentation URLs, known data gaps,
+     research patterns that worked. Keep it scannable — use headers and bullets. -->

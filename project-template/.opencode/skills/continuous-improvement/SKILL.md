@@ -11,6 +11,17 @@ The relevant documents are:
 - The AGENTS.md file, located at `AGENTS.md`
 
 When you did something important, update your memory (in the log section). If you gained knowledge that could be useful, also update the other files: your structured memory, the relevant skills, and the AGENTS.md file.
+After completing and validating your work, extract what you learned and record it.
+
+## Where to Record
+
+| What you learned | Where it goes |
+|-----------------|---------------|
+| General tool/workflow knowledge | The relevant skill's anti-patterns-and-common-mistakes section |
+| Error in a skill's instructions | Fix the skill directly |
+| Project-specific fact or status | Your `.opencode/agents/<AGENT_NAME>.memory` file |
+| Cross-agent project context | `AGENTS.md` |
+| Entirely new domain knowledge | New skill (delegate to manager via manage-skills) |
 </continuous-improvement>
 <significant-conclusions>
 Pay attention to the relevant information you can learn from your work, and update the relevant data. This is important to make sure that the project is improving and learning from the work being done.

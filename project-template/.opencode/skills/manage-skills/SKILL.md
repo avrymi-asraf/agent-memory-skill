@@ -47,16 +47,16 @@ skill-name/
 ## SKILL.md Structure
 Each skill requires a `SKILL.md` with YAML frontmatter and a markdown body that includes a list of HTML topics.
 The YAML includes two fields:
-- name: the name of the skill, it should be unique and not too long.
+- name: - **name**: Unique identifier. Max 64 chars, lowercase letters/numbers/hyphens.
 - description: a brief description of the skill, what it does and when to use it. this is very important for the agent to decide when to use the skill, so it should be specific and include trigger terms.
 
 A skill is a set of topics about a specific domain. Its purpose is to teach an agent about a domain it doesn't know. Topics can range from broad domain overviews to specific workflows, error patterns, usage examples, or common mistakes. Choosing the right topics and the right level of detail for each is critical. Use reference files to keep the skill within the required length while keeping each topic relevant.
-Each paragraph is written in html tags like this: <topic name> </topic name>
-Within the paragraph, write what you need in an efficient way.
+Each topic is written in HTML tags like this: `<topic-name>` `</topic-name>`
+Within each topic, write what you need in an efficient way.
 
-The first topic is like the name of the skill and is very important - it contains an explanation about the skill itself, an expansion of what is in which paragraph and a broader explanation about the domain that needs to be explained.
+The first topic shares the skill's name and is the most important — it contains an overview of the skill, a map of which topic covers what, and a broader explanation of the domain.
 If the opening section is weak, the rest of the skill may never be used. Write it last, once you know the whole skill.
-There is no need to explain obvious things - syntax, famous things in programming. Think carefully about what needs to be explained and what not.
+There is no need to explain obvious things — standard syntax, well-known programming concepts. Think carefully about what needs explaining and what does not.
 
 
 ```markdown
@@ -66,7 +66,7 @@ description: Brief description of what this skill does and when to use it
 ---
 
 <your-skill-name>
-explain about the skill, its purpose, and the broader domain it covers. what the is in the skill and how the paragraphs are organized. link to reference files if needed.
+Explain the skill, its purpose, and the broader domain it covers. Describe what is in the skill and how the topics are organized. Link to reference files if needed.
 
 </your-skill-name>
 <topic_1>
